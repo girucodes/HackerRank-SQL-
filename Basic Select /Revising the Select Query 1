@@ -16,6 +16,7 @@ POPULATION | NUMBER
 
 '''
       Pseudocode 
+SELECT on multiple fields. 
 we want to get all the columns from the city table with 2 condition 
 1. population > 100000 
 2. countrycode = "USA"
