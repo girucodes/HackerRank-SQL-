@@ -1,0 +1,29 @@
+# SQL (Basic)
+# Difficulty : Easy 
+''' 
+Question 
+Query all columns for all American cities in the CITY table with populations larger than 100000. 
+The CountryCode for America is USA.
+
+The CITY table is described as follows:
+Field   | Type 
+ID      |  NUMBER
+NAME    |  VARCHAR2(17)
+COUNTRYCODE | VARCHAR2(3)
+DISTRICT | VARCHAR2(20)
+POPULATION | NUMBER 
+''' 
+
+'''
+      Pseudocode 
+we want to get all the columns from the city table with 2 condition 
+1. population > 100000 
+2. countrycode = "USA"
+
+We will use WHERE clause to filter our records from table City with these 2 conditions 
+''' 
+
+# SOLUTION 
+SELECT * 
+FROM CITY 
+WHERE POPULATION > 100000 AND COUNTRYCODE = 'USA'; 
