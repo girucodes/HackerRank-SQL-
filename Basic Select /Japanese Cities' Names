@@ -1,0 +1,24 @@
+# SQL (Basic)
+# Difficulty : Easy 
+''' 
+Question
+Query the names of all the Japanese cities in the CITY table. The COUNTRYCODE for Japan is JPN.
+The CITY table is described as follows:
+Field   | Type 
+ID      |  NUMBER
+NAME    |  VARCHAR2(17)
+COUNTRYCODE | VARCHAR2(3)
+DISTRICT | VARCHAR2(20)
+POPULATION | NUMBER 
+''' 
+
+''' 
+    pseudocode
+Here we want only those names of cities who are from CountryCode = 'JPN'
+select single field with one condition. 
+'''
+
+# SOLUTION
+SELECT NAME
+FROM CITY 
+WHERE COUNTRYCODE = 'JPN' ; 
