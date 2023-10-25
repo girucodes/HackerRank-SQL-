@@ -38,7 +38,7 @@ If you look at the last three characters of each of their names, there are no du
     pseudocode
 We have to find those student names who scored higher than 75 marks -> condition 
 and sort the result acc to their last 3 char names if they are duplicate then sort on basis of ID. 
-We will use ORDER BY clause to order the column for filtered result of last 3 chars SUBSTR(NAME,-3,3) 
+We will use ORDER BY clause to order the column for filtered result of last 3 chars SUBSTR(NAME,-3,3) for final output. 
 '''
 
 # SOLUTION
@@ -50,5 +50,5 @@ ORDER BY SUBSTR(NAME, -3,3), ID ;
 # SQL ORDER OF EXECUTION
 1. FROM
 2. WHERE 
-3. ORDER BY 
-4. SELECT 
+3. SELECT
+4. ORDER BY 
