@@ -46,3 +46,8 @@ Order means we have to use sort final result so we will use ORDER BY clause
 SELECT NAME
 FROM EMPLOYEE
 ORDER BY NAME ; 
+
+# SQL ORDER OF EXECUTION
+1. FROM
+2. SELECT
+3. ORDER BY 
