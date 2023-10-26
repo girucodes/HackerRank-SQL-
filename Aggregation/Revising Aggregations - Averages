@@ -1,0 +1,34 @@
+# SQL (Basic)
+# Difficulty : Easy 
+
+'''
+Question: 3
+Query the average population of all cities in CITY where District is California.
+
+Input Format
+
+The CITY table is described as follows:
+Field   | Type 
+ID      |  NUMBER
+NAME    |  VARCHAR2(17)
+COUNTRYCODE | VARCHAR2(3)
+DISTRICT | VARCHAR2(20)
+POPULATION | NUMBER 
+'''
+
+'''
+    pseudocode
+We have to find avg population of those cities who come in district = 'California' 
+1. WHERE condition
+2. AVG() aggregate function to find avg population 
+'''
+
+# SOLUTION
+SELECT AVG(POPULATION) AS AVERAGE_POPULATION 
+FROM CITY
+WHERE DISTRICT LIKE 'CALIFORNIA' ;
+
+# SQL ORDER OF EXECUTION
+1. FROM 
+2. WHERE 
+3. SELECT -> AVG(POPULATION) will come in final o/p as alias AVERAGE_POPULATION. 
