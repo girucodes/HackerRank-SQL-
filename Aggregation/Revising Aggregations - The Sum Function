@@ -1,0 +1,36 @@
+# SQL (Basic)
+# Difficulty : Easy 
+
+'''
+Question: 2
+Query the total population of all cities in CITY where District is California.
+
+Input Format
+
+The CITY table is described as follows:
+Field   | Type 
+ID      |  NUMBER
+NAME    |  VARCHAR2(17)
+COUNTRYCODE | VARCHAR2(3)
+DISTRICT | VARCHAR2(20)
+POPULATION | NUMBER 
+'''
+
+'''
+    pseudocode
+We want to find the total population of those cities who come in district California. 
+1. WHERE condition 
+2. SUM() -> to calculate sum of population 
+SUM(POPULATION) -> will ignore null values 
+SUM() -> will calculate all sum of numeric values & ignore null values while computing. 
+'''
+
+# SOLUTION
+SELECT SUM(POPULATION) AS TOTAL_POPULATION
+FROM CITY 
+WHERE DISTRICT LIKE 'California'; 
+
+# SQL ORDER OF EXECUTION
+1. FROM 
+2. WHERE 
+3. SELECT -> gives us SUM() aggregation of population -> TOTAL_POPULATION.
