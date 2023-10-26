@@ -1,0 +1,36 @@
+# SQL (Basic)
+# Difficulty : Easy 
+
+'''
+Question: 1
+Query a count of the number of cities in CITY having a Population larger than 100,000.
+
+Input Format
+
+The CITY table is described as follows:
+Field   | Type 
+ID      |  NUMBER
+NAME    |  VARCHAR2(17)
+COUNTRYCODE | VARCHAR2(3)
+DISTRICT | VARCHAR2(20)
+POPULATION | NUMBER 
+'''
+
+'''
+    pseudocode
+We want to find those city count whose population > 100000
+Here we will use 
+1. where condition -> population > 100000
+2. COUNT() -> will gives us total count 
+COUNT(NAMES) => will give total city count excluding null value. 
+'''
+
+# SOLUTION
+SELECT COUNT(NAME) AS NUMBER_OF_CITIES
+FROM CITY 
+WHERE POPULATION > 100000  ;
+
+# SQL ORDER OF EXECUTION
+1. FROM table city 
+2. WHERE condition to filter row data from base table 
+3. SELECT where it will gives total count of city in column alias -> NUMBER_OF_CITIES. 
