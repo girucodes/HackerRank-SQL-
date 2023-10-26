@@ -1,0 +1,31 @@
+# SQL (Basic)
+# Difficulty : Easy 
+
+'''
+Question: 4
+Query the average population for all cities in CITY, rounded down to the nearest integer
+
+Input Format
+
+The CITY table is described as follows:
+Field   | Type 
+ID      |  NUMBER
+NAME    |  VARCHAR2(17)
+COUNTRYCODE | VARCHAR2(3)
+DISTRICT | VARCHAR2(20)
+POPULATION | NUMBER 
+'''
+
+'''
+    pseudocode
+We have to find avg population for all cities and round the value to its nearest integer 
+for that we will use FLOOR() => function returns the largest integer value that is smaller than or equal to a number.
+'''
+
+# SOLUTION 
+SELECT FLOOR(AVG(POPULATION) AS AVERAGE_POPULATION
+FROM CITY ; 
+
+# SQL ORDER OF EXCEUTION
+1. FROM 
+2. SELECT -> AVG() -> FLOOR() 
